@@ -15,16 +15,12 @@ Now you can run this app and interact with github via this project.
 ```dart
 final authLink = AuthLink(getToken: () => "Bearer token"); // insert your token here
 ```
-
-# App Features
-<img src="./docs/images/app_list_image.png" alt="アプリイメージ" width="200"/>
-
 ## Search Repositories
 You can search repositories with words.
 This project uses query for this feature.
-You can check query statement in [list_screen.query.graphql](lib/screen/list_screen/graphql/list_screen.query.graphql).
+You can check query statement in [list_screen.query.graphql](lib/screen/list_screen.query.graphql).
 
 ## Add / Remove Star to Repository
 You can add or remove star from searched repositories.
 This project uses mutations for this feature.
-you can check add star mutation in [add_star.mutation.graphql](lib/network/mutation/add_star/graphql/add_star.mutation.graphql) and remove star mutation in [remove_star.mutation.graphql](lib/network/mutation/remove_star/graphql/remove_star.mutation.graphql).
+you can check add star mutation in [add_star.mutation.graphql](lib/mutation/add_star.mutation.graphql) and remove star mutation in [remove_star.mutation.graphql](lib/mutation/remove_star.mutation.graphql).
