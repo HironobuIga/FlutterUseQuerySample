@@ -13,6 +13,9 @@ void main() async {
   final client = GraphQLClient(
     link: authLink.concat(HttpLink("https://api.github.com/graphql")),
     cache: GraphQLCache(
+      possibleTypes: {
+        'RepositoryOwner': {'User', 'Organization'},
+      },
       store: InMemoryStore(),
     ),
   );
