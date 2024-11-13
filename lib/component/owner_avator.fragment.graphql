@@ -1,0 +1,5 @@
+fragment OwnerAvatarFragment on RepositoryOwner {
+    __typename
+    id
+    avatarUrl
+}

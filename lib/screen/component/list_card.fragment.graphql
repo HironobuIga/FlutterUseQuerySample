@@ -1,0 +1,11 @@
+fragment ListCardFragment on Repository {
+    __typename
+    id
+    name
+    description
+    viewerHasStarred
+    owner {
+        login
+        ...OwnerAvatarFragment
+    }
+}

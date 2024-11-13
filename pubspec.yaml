@@ -1,0 +1,23 @@
+name: flutter_tokyo
+description: GraphQL sample project for flutter tokyo.
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.3
+
+dependencies:
+  flutter:
+    sdk: flutter
+  graphql_flutter: ^5.1.2
+  flutter_hooks: ^0.20.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  build_runner:
+  graphql_codegen: ^0.13.11
+
+flutter:
+  uses-material-design: true

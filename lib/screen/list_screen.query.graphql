@@ -1,0 +1,11 @@
+query ListScreenQuery($searchWord: String!) {
+    search(query: $searchWord, type: REPOSITORY, first: 50) {
+        __typename
+        repositoryCount
+        nodes {
+            ... on Repository {
+                ...ListCardFragment
+            }
+        }
+    }
+}
