@@ -15,6 +15,10 @@ Now you can run this app and interact with github via this project.
 ```dart
 final authLink = AuthLink(getToken: () => "Bearer token"); // insert your token here
 ```
+
+# App Features
+<img src="./docs/images/app_list_image.png" alt="アプリイメージ" width="200"/>
+
 ## Search Repositories
 You can search repositories with words.
 This project uses query for this feature.
