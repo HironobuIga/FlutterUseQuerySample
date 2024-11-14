@@ -3,8 +3,6 @@ import 'package:flutter_tokyo/app.dart';
 import 'package:graphql_flutter/graphql_flutter.dart';
 
 void main() async {
-  runApp(const MaterialApp(home: CircularProgressIndicator()));
-
   final authLink = AuthLink(
     getToken: () async {
       return 'Bearer TOKEN';
